@@ -1,0 +1,39 @@
+body {
+  overflow: hidden; /* Prevent page from scrolling */
+}
+
+.main-container {
+  height: calc(100vh - 56px); /* Assuming the navbar height is 56px, adjust accordingly */
+  overflow: hidden;
+}
+
+.chat-box {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message p {
+  margin: 0;
+}
+
+h5.user-name {
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  margin-top: auto;
+}
+
+.active-user {
+  background-color: #f0f0f0;
+}
+
+.user-name {
+  font-size: 1.25rem;
+}

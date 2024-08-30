@@ -1,0 +1,44 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow p-3 mb-5 bg-body rounded">
+                <div class="text-center fs-4">Register Page</div>
+                
+                <div class="card-body">
+                    <form (ngSubmit)="onSubmit()">
+                        
+                        <div class="mb-3">
+                            
+                            <input type="text" [(ngModel)]="user.fullName" name="fullName" class="form-control" 
+                                required placeholder="FullName">
+                        </div>
+                        
+                        <div class="mb-3">
+                            
+                            <input type="email" [(ngModel)]="user.email" name="email" class="form-control" 
+                                required placeholder="Email">
+                        </div>
+
+                        <div class="mb-3">
+                            
+                            <input type="text" [(ngModel)]="user.phoneNo" name="phoneNo" class="form-control" 
+                                placeholder="Phone Number" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            
+                            <input type="password" [(ngModel)]="user.password" name="password" class="form-control" 
+                                placeholder="Password" required>
+                        </div>
+                        
+                        <button class="btn btn-primary col-md-12">Register</button>
+                        
+                    </form>
+                </div>
+                <div class="text-center">
+                    <p class="fs-6">Already have an account? <a href="/login" class="text-decoration-none">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
